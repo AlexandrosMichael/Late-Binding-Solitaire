@@ -1,0 +1,905 @@
+MINION 3
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# CSE_active_number = 47
+# CSE_active_eliminated_expressions = 118
+# CSE_active_total_size = 387
+**VARIABLES**
+DISCRETE states_00002_00001 #
+{1..14}
+DISCRETE states_00002_00002 #
+{33..37}
+DISCRETE states_00002_00004 #
+{0..37}
+DISCRETE states_00002_00005 #
+{37..47}
+DISCRETE states_00002_00006 #
+{0..47}
+DISCRETE states_00002_00007 #
+{0..45}
+DISCRETE states_00002_00008 #
+{2..45}
+DISCRETE states_00002_00009 #
+{2..38}
+DISCRETE states_00002_00010 #
+{12..38}
+DISCRETE states_00002_00011 #
+{7..12}
+DISCRETE states_00002_00012 #
+{7..39}
+DISCRETE states_00002_00013 #
+{8..39}
+DISCRETE states_00003_00001 #
+{1..14}
+DISCRETE states_00003_00002 #
+{33..37}
+DISCRETE states_00003_00003 #
+{0..26}
+DISCRETE states_00003_00004 #
+{0..47}
+DISCRETE states_00003_00005 #
+{0..47}
+DISCRETE states_00003_00006 #
+{0..47}
+DISCRETE states_00003_00007 #
+{0..45}
+DISCRETE states_00003_00008 #
+{2..45}
+DISCRETE states_00003_00009 #
+{2..38}
+DISCRETE states_00003_00010 #
+{7..38}
+DISCRETE states_00003_00011 #
+{7..39}
+DISCRETE states_00003_00012 #
+{8..39}
+DISCRETE states_00004_00001 #
+{0..47}
+DISCRETE states_00004_00002 #
+{0..47}
+DISCRETE states_00004_00003 #
+{0..47}
+DISCRETE states_00004_00004 #
+{0..47}
+DISCRETE states_00004_00005 #
+{0..47}
+DISCRETE states_00004_00006 #
+{0..47}
+DISCRETE states_00004_00007 #
+{0..45}
+DISCRETE states_00004_00008 #
+{2..45}
+DISCRETE states_00004_00009 #
+{2..39}
+DISCRETE states_00004_00010 #
+{7..39}
+DISCRETE states_00004_00011 #
+{7..39}
+DISCRETE states_00005_00001 #
+{0..47}
+DISCRETE states_00005_00002 #
+{0..47}
+DISCRETE states_00005_00003 #
+{0..47}
+DISCRETE states_00005_00004 #
+{0..47}
+DISCRETE states_00005_00005 #
+{0..47}
+DISCRETE states_00005_00006 #
+{0..47}
+DISCRETE states_00005_00007 #
+{0..45}
+DISCRETE states_00005_00008 #
+{2..45}
+DISCRETE states_00005_00009 #
+{2..39}
+DISCRETE states_00005_00010 #
+{7..39}
+DISCRETE states_00006_00001 #
+{0..47}
+DISCRETE states_00006_00002 #
+{0..47}
+DISCRETE states_00006_00003 #
+{0..47}
+DISCRETE states_00006_00004 #
+{0..47}
+DISCRETE states_00006_00005 #
+{0..47}
+DISCRETE states_00006_00006 #
+{0..47}
+DISCRETE states_00006_00007 #
+{0..45}
+DISCRETE states_00006_00008 #
+{2..45}
+DISCRETE states_00006_00009 #
+{2..39}
+DISCRETE states_00007_00001 #
+{0..47}
+DISCRETE states_00007_00002 #
+{0..47}
+DISCRETE states_00007_00003 #
+{0..47}
+DISCRETE states_00007_00004 #
+{0..47}
+DISCRETE states_00007_00005 #
+{0..47}
+DISCRETE states_00007_00006 #
+{0..47}
+DISCRETE states_00007_00007 #
+{0..45}
+DISCRETE states_00007_00008 #
+{2..45}
+DISCRETE states_00008_00001 #
+{0..47}
+DISCRETE states_00008_00002 #
+{0..47}
+DISCRETE states_00008_00003 #
+{0..47}
+DISCRETE states_00008_00004 #
+{0..47}
+DISCRETE states_00008_00005 #
+{0..47}
+DISCRETE states_00008_00006 #
+{0..47}
+DISCRETE states_00008_00007 #
+{0..45}
+DISCRETE states_00009_00001 #
+{0..47}
+DISCRETE states_00009_00002 #
+{0..47}
+DISCRETE states_00009_00003 #
+{0..47}
+DISCRETE states_00009_00004 #
+{0..47}
+DISCRETE states_00009_00005 #
+{0..47}
+DISCRETE states_00009_00006 #
+{0..47}
+DISCRETE states_00010_00001 #
+{0..47}
+DISCRETE states_00010_00002 #
+{0..47}
+DISCRETE states_00010_00003 #
+{0..47}
+DISCRETE states_00010_00004 #
+{0..47}
+DISCRETE states_00010_00005 #
+{0..47}
+DISCRETE states_00011_00001 #
+{0..47}
+DISCRETE states_00011_00002 #
+{0..47}
+DISCRETE states_00011_00003 #
+{0..47}
+DISCRETE states_00011_00004 #
+{0..47}
+DISCRETE states_00012_00001 #
+{0..47}
+DISCRETE states_00012_00002 #
+{0..47}
+DISCRETE states_00012_00003 #
+{0..47}
+DISCRETE states_00013_00001 #
+{0..47}
+DISCRETE states_00013_00002 #
+{0..47}
+DISCRETE actionFrom_00001 #
+{4..14}
+DISCRETE actionFrom_00002 #
+{4..13}
+DISCRETE actionFrom_00003 #
+{2..12}
+DISCRETE actionFrom_00004 #
+{2..11}
+DISCRETE actionFrom_00005 #
+{2..10}
+DISCRETE actionFrom_00006 #
+{2..9}
+DISCRETE actionFrom_00007 #
+{2..8}
+DISCRETE actionFrom_00008 #
+{2..7}
+DISCRETE actionFrom_00009 #
+{2..6}
+DISCRETE actionFrom_00010 #
+{2..5}
+DISCRETE actionFrom_00011 #
+{2..4}
+DISCRETE actionFrom_00012 #
+{2..3}
+DISCRETE actionTo_00001 #
+{1..11}
+DISCRETE actionTo_00002 #
+{1..12}
+DISCRETE actionTo_00003 #
+{1..11}
+DISCRETE actionTo_00004 #
+{1..10}
+DISCRETE actionTo_00005 #
+{1..9}
+DISCRETE actionTo_00006 #
+{1..8}
+DISCRETE actionTo_00007 #
+{1..7}
+DISCRETE actionTo_00008 #
+{1..6}
+DISCRETE actionTo_00009 #
+{1..5}
+DISCRETE actionTo_00010 #
+{1..4}
+DISCRETE actionTo_00011 #
+{1..3}
+DISCRETE actionTo_00012 #
+{1..2}
+DISCRETE actionValue_00001 #
+{0..37}
+**CONSTRAINTS**
+w-inintervalset(actionValue_00001, [0,2,7,8,12,12,37,37])
+**VARIABLES**
+DISCRETE actionValue_00002 #
+{0..47}
+DISCRETE actionValue_00003 #
+{0..47}
+DISCRETE actionValue_00004 #
+{0..47}
+DISCRETE actionValue_00005 #
+{0..47}
+DISCRETE actionValue_00006 #
+{0..47}
+DISCRETE actionValue_00007 #
+{0..47}
+DISCRETE actionValue_00008 #
+{0..47}
+DISCRETE actionValue_00009 #
+{0..47}
+DISCRETE actionValue_00010 #
+{0..47}
+DISCRETE actionValue_00011 #
+{0..47}
+DISCRETE actionValue_00012 #
+{0..47}
+DISCRETE aux14 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00002_00001, states_00002_00002, 13, states_00002_00004, states_00002_00005, states_00002_00006, states_00002_00007, states_00002_00008, states_00002_00009, states_00002_00010, states_00002_00011, states_00002_00012], (actionTo_00002 + -1))
+{0..47}
+DISCRETE aux16 #Active-CSE: 2 occurrences of this expression or equivalent: Element([14, 33, 13, 1, 37, 47, 0, 45, 2, 38, 12], (actionTo_00001 + -1))
+{0..47}
+**CONSTRAINTS**
+w-inintervalset(aux16, [0,2,12,14,33,33,37,38,45,45,47,47])
+**VARIABLES**
+DISCRETE aux17 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00003_00001, states_00003_00002, states_00003_00003, states_00003_00004, states_00003_00005, states_00003_00006, states_00003_00007, states_00003_00008, states_00003_00009, states_00003_00010, states_00003_00011], (actionTo_00003 + -1))
+{0..47}
+DISCRETE aux21 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00004_00001, states_00004_00002, states_00004_00003, states_00004_00004, states_00004_00005, states_00004_00006, states_00004_00007, states_00004_00008, states_00004_00009, states_00004_00010], (actionTo_00004 + -1))
+{0..47}
+DISCRETE aux22 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00005_00001, states_00005_00002, states_00005_00003, states_00005_00004, states_00005_00005, states_00005_00006, states_00005_00007, states_00005_00008, states_00005_00009], (actionTo_00005 + -1))
+{0..47}
+DISCRETE aux24 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00006_00001, states_00006_00002, states_00006_00003, states_00006_00004, states_00006_00005, states_00006_00006, states_00006_00007, states_00006_00008], (actionTo_00006 + -1))
+{0..47}
+DISCRETE aux26 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00007_00001, states_00007_00002, states_00007_00003, states_00007_00004, states_00007_00005, states_00007_00006, states_00007_00007], (actionTo_00007 + -1))
+{0..47}
+DISCRETE aux28 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00008_00001, states_00008_00002, states_00008_00003, states_00008_00004, states_00008_00005, states_00008_00006], (actionTo_00008 + -1))
+{0..47}
+DISCRETE aux31 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00009_00001, states_00009_00002, states_00009_00003, states_00009_00004, states_00009_00005], (actionTo_00009 + -1))
+{0..47}
+DISCRETE aux33 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00010_00001, states_00010_00002, states_00010_00003, states_00010_00004], (actionTo_00010 + -1))
+{0..47}
+DISCRETE aux35 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00011_00001, states_00011_00002, states_00011_00003], (actionTo_00011 + -1))
+{0..47}
+DISCRETE aux36 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00012_00001, states_00012_00002], (actionTo_00012 + -1))
+{0..47}
+DISCRETE aux38 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00011 + actionFrom_00011)
+{1..3}
+DISCRETE aux39 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00010 + actionFrom_00010)
+{1..3}
+DISCRETE aux40 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00009 + actionFrom_00009)
+{1..3}
+DISCRETE aux41 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00007 + actionFrom_00007)
+{1..3}
+DISCRETE aux42 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00008 + actionFrom_00008)
+{1..3}
+DISCRETE aux43 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00005 + actionFrom_00005)
+{1..3}
+DISCRETE aux44 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00006 + actionFrom_00006)
+{1..3}
+DISCRETE aux45 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00003 + actionFrom_00003)
+{1..3}
+DISCRETE aux46 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00004 + actionFrom_00004)
+{1..3}
+DISCRETE aux47 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00001 + actionFrom_00001)
+{1..3}
+DISCRETE aux48 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00002 + actionFrom_00002)
+{1..3}
+DISCRETE aux49 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00007 + -1)
+{0..6}
+DISCRETE aux50 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00006 + -1)
+{0..7}
+DISCRETE aux51 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00009 + -1)
+{0..4}
+DISCRETE aux52 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00008 + -1)
+{0..5}
+DISCRETE aux53 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00003 + -1)
+{0..10}
+DISCRETE aux54 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00002 + -1)
+{0..11}
+DISCRETE aux55 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00005 + -1)
+{0..8}
+DISCRETE aux56 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00004 + -1)
+{0..9}
+DISCRETE aux57 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00001 + -1)
+{0..10}
+**CONSTRAINTS**
+w-inintervalset(aux57, [0,1,3,4,8,10])
+**VARIABLES**
+DISCRETE aux58 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00010 + -1)
+{0..3}
+BOOL aux59 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00012 + -1)
+DISCRETE aux60 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00011 + -1)
+{0..2}
+DISCRETE aux61 #
+{0..12}
+DISCRETE aux62 #
+{0..3}
+DISCRETE aux63 #
+{0..3}
+DISCRETE aux64 #
+{0..12}
+DISCRETE aux65 #
+{0..2}
+**CONSTRAINTS**
+w-inintervalset(aux65, [0,0,2,2])
+**VARIABLES**
+DISCRETE aux66 #
+{0..12}
+**CONSTRAINTS**
+w-inintervalset(aux66, [0,2,7,8,11,12])
+**VARIABLES**
+DISCRETE aux67 #
+{0..3}
+DISCRETE aux68 #
+{0..12}
+DISCRETE aux69 #
+{0..12}
+DISCRETE aux70 #
+{0..3}
+DISCRETE aux71 #
+{0..3}
+DISCRETE aux72 #
+{0..12}
+DISCRETE aux73 #
+{0..12}
+DISCRETE aux74 #
+{0..3}
+DISCRETE aux75 #
+{0..12}
+DISCRETE aux76 #
+{0..3}
+DISCRETE aux77 #
+{0..3}
+DISCRETE aux78 #
+{0..12}
+DISCRETE aux79 #
+{0..12}
+DISCRETE aux80 #
+{0..3}
+DISCRETE aux81 #
+{0..3}
+DISCRETE aux82 #
+{0..12}
+DISCRETE aux83 #
+{0..3}
+DISCRETE aux84 #
+{0..12}
+DISCRETE aux85 #
+{0..3}
+DISCRETE aux86 #
+{0..12}
+DISCRETE aux87 #(actionFrom_00001 + -4)
+{0..10}
+DISCRETE aux88 #(actionFrom_00003 + -2)
+{0..10}
+DISCRETE aux89 #(actionFrom_00002 + -4)
+{0..9}
+DISCRETE aux90 #(actionFrom_00004 + -2)
+{0..9}
+DISCRETE aux91 #(actionFrom_00005 + -2)
+{0..8}
+DISCRETE aux92 #(actionFrom_00006 + -2)
+{0..7}
+DISCRETE aux93 #(actionFrom_00007 + -2)
+{0..6}
+DISCRETE aux94 #(actionFrom_00008 + -2)
+{0..5}
+DISCRETE aux95 #(actionFrom_00009 + -2)
+{0..4}
+DISCRETE aux96 #(actionFrom_00010 + -2)
+{0..3}
+DISCRETE aux97 #(actionFrom_00011 + -2)
+{0..2}
+BOOL aux98 #(actionFrom_00012 + -2)
+BOOL aux99 #(actionFrom_00006<6)
+BOOL aux100 #(actionFrom_00002<13)
+BOOL aux101 #(actionFrom_00005<10)
+BOOL aux102 #(actionFrom_00004<7)
+BOOL aux103 #(actionFrom_00005<3)
+BOOL aux104 #(actionFrom_00011<4)
+BOOL aux105 #(actionFrom_00009<5)
+BOOL aux106 #(actionFrom_00002<7)
+BOOL aux107 #(actionFrom_00008<5)
+BOOL aux108 #(actionFrom_00003<4)
+BOOL aux109 #(actionFrom_00003<10)
+BOOL aux110 #(actionFrom_00001<5)
+BOOL aux111 #(actionFrom_00006<7)
+BOOL aux112 #(actionFrom_00002<12)
+BOOL aux113 #(actionFrom_00004<8)
+BOOL aux114 #(actionFrom_00011<3)
+BOOL aux115 #(actionFrom_00009<4)
+BOOL aux116 #(actionFrom_00002<6)
+BOOL aux117 #(actionFrom_00003<3)
+BOOL aux118 #(actionFrom_00008<6)
+BOOL aux119 #(actionFrom_00003<11)
+BOOL aux120 #(actionFrom_00006<4)
+BOOL aux121 #(actionFrom_00007<4)
+BOOL aux122 #(actionFrom_00004<9)
+BOOL aux123 #(actionFrom_00005<9)
+BOOL aux124 #(actionFrom_00003<6)
+BOOL aux125 #(actionFrom_00002<9)
+BOOL aux126 #(actionFrom_00008<7)
+BOOL aux127 #(actionFrom_00010<3)
+BOOL aux128 #(actionFrom_00006<5)
+BOOL aux129 #(actionFrom_00007<3)
+BOOL aux130 #(actionFrom_00005<8)
+BOOL aux131 #(actionFrom_00009<6)
+BOOL aux132 #(actionFrom_00004<10)
+BOOL aux133 #(actionFrom_00003<5)
+BOOL aux134 #(actionFrom_00002<8)
+BOOL aux135 #(actionFrom_00001<10)
+BOOL aux136 #(actionFrom_00010<4)
+BOOL aux137 #(actionFrom_00007<6)
+BOOL aux138 #(actionFrom_00001<8)
+BOOL aux139 #(actionFrom_00004<3)
+BOOL aux140 #(actionFrom_00005<7)
+BOOL aux141 #(actionFrom_00012<3)
+BOOL aux142 #(actionFrom_00003<8)
+BOOL aux143 #(actionFrom_00001<13)
+BOOL aux144 #(actionFrom_00006<3)
+BOOL aux145 #(actionFrom_00003<12)
+BOOL aux146 #(actionFrom_00007<5)
+BOOL aux147 #(actionFrom_00001<9)
+BOOL aux148 #(actionFrom_00010<5)
+BOOL aux149 #(actionFrom_00004<4)
+BOOL aux150 #(actionFrom_00002<10)
+BOOL aux151 #(actionFrom_00005<6)
+BOOL aux152 #(actionFrom_00003<7)
+BOOL aux153 #(actionFrom_00001<14)
+BOOL aux154 #(actionFrom_00001<6)
+BOOL aux155 #(actionFrom_00006<8)
+BOOL aux156 #(actionFrom_00002<11)
+BOOL aux157 #(actionFrom_00007<8)
+BOOL aux158 #(actionFrom_00004<5)
+BOOL aux159 #(actionFrom_00004<11)
+BOOL aux160 #(actionFrom_00005<5)
+BOOL aux161 #(actionFrom_00009<3)
+BOOL aux162 #(actionFrom_00002<5)
+BOOL aux163 #(actionFrom_00008<3)
+BOOL aux164 #(actionFrom_00001<11)
+BOOL aux165 #(actionFrom_00006<9)
+BOOL aux166 #(actionFrom_00007<7)
+BOOL aux167 #(actionFrom_00004<6)
+BOOL aux168 #(actionFrom_00001<7)
+BOOL aux169 #(actionFrom_00005<4)
+BOOL aux170 #(actionFrom_00003<9)
+BOOL aux171 #(actionFrom_00008<4)
+BOOL aux172 #(actionFrom_00001<12)
+**VARIABLES**
+ALIAS cards[14]=[14, 33, 13, 1, 37, 47, 0, 45, 2, 38, 12, 7, 39, 8]
+**SEARCH**
+PRINT[[states_00002_00001],[states_00002_00002],[states_00002_00004],[states_00002_00005],[states_00002_00006],[states_00002_00007],[states_00002_00008],[states_00002_00009],[states_00002_00010],[states_00002_00011],[states_00002_00012],[states_00002_00013],[states_00003_00001],[states_00003_00002],[states_00003_00003],[states_00003_00004],[states_00003_00005],[states_00003_00006],[states_00003_00007],[states_00003_00008],[states_00003_00009],[states_00003_00010],[states_00003_00011],[states_00003_00012],[states_00004_00001],[states_00004_00002],[states_00004_00003],[states_00004_00004],[states_00004_00005],[states_00004_00006],[states_00004_00007],[states_00004_00008],[states_00004_00009],[states_00004_00010],[states_00004_00011],[states_00005_00001],[states_00005_00002],[states_00005_00003],[states_00005_00004],[states_00005_00005],[states_00005_00006],[states_00005_00007],[states_00005_00008],[states_00005_00009],[states_00005_00010],[states_00006_00001],[states_00006_00002],[states_00006_00003],[states_00006_00004],[states_00006_00005],[states_00006_00006],[states_00006_00007],[states_00006_00008],[states_00006_00009],[states_00007_00001],[states_00007_00002],[states_00007_00003],[states_00007_00004],[states_00007_00005],[states_00007_00006],[states_00007_00007],[states_00007_00008],[states_00008_00001],[states_00008_00002],[states_00008_00003],[states_00008_00004],[states_00008_00005],[states_00008_00006],[states_00008_00007],[states_00009_00001],[states_00009_00002],[states_00009_00003],[states_00009_00004],[states_00009_00005],[states_00009_00006],[states_00010_00001],[states_00010_00002],[states_00010_00003],[states_00010_00004],[states_00010_00005],[states_00011_00001],[states_00011_00002],[states_00011_00003],[states_00011_00004],[states_00012_00001],[states_00012_00002],[states_00012_00003],[states_00013_00001],[states_00013_00002],[actionFrom_00001],[actionFrom_00002],[actionFrom_00003],[actionFrom_00004],[actionFrom_00005],[actionFrom_00006],[actionFrom_00007],[actionFrom_00008],[actionFrom_00009],[actionFrom_00010],[actionFrom_00011],[actionFrom_00012],[actionTo_00001],[actionTo_00002],[actionTo_00003],[actionTo_00004],[actionTo_00005],[actionTo_00006],[actionTo_00007],[actionTo_00008],[actionTo_00009],[actionTo_00010],[actionTo_00011],[actionTo_00012],[actionValue_00001],[actionValue_00002],[actionValue_00003],[actionValue_00004],[actionValue_00005],[actionValue_00006],[actionValue_00007],[actionValue_00008],[actionValue_00009],[actionValue_00010],[actionValue_00011],[actionValue_00012]]
+VARORDER STATIC [states_00002_00001, states_00002_00002, states_00002_00004, states_00002_00005, states_00002_00006, states_00002_00007, states_00002_00008, states_00002_00009, states_00002_00010, states_00002_00011, states_00002_00012, states_00002_00013, states_00003_00001, states_00003_00002, states_00003_00003, states_00003_00004, states_00003_00005, states_00003_00006, states_00003_00007, states_00003_00008, states_00003_00009, states_00003_00010, states_00003_00011, states_00003_00012, states_00004_00001, states_00004_00002, states_00004_00003, states_00004_00004, states_00004_00005, states_00004_00006, states_00004_00007, states_00004_00008, states_00004_00009, states_00004_00010, states_00004_00011, states_00005_00001, states_00005_00002, states_00005_00003, states_00005_00004, states_00005_00005, states_00005_00006, states_00005_00007, states_00005_00008, states_00005_00009, states_00005_00010, states_00006_00001, states_00006_00002, states_00006_00003, states_00006_00004, states_00006_00005, states_00006_00006, states_00006_00007, states_00006_00008, states_00006_00009, states_00007_00001, states_00007_00002, states_00007_00003, states_00007_00004, states_00007_00005, states_00007_00006, states_00007_00007, states_00007_00008, states_00008_00001, states_00008_00002, states_00008_00003, states_00008_00004, states_00008_00005, states_00008_00006, states_00008_00007, states_00009_00001, states_00009_00002, states_00009_00003, states_00009_00004, states_00009_00005, states_00009_00006, states_00010_00001, states_00010_00002, states_00010_00003, states_00010_00004, states_00010_00005, states_00011_00001, states_00011_00002, states_00011_00003, states_00011_00004, states_00012_00001, states_00012_00002, states_00012_00003, states_00013_00001, states_00013_00002, actionFrom_00001, actionFrom_00002, actionFrom_00003, actionFrom_00004, actionFrom_00005, actionFrom_00006, actionFrom_00007, actionFrom_00008, actionFrom_00009, actionFrom_00010, actionFrom_00011, actionFrom_00012, actionTo_00001, actionTo_00002, actionTo_00003, actionTo_00004, actionTo_00005, actionTo_00006, actionTo_00007, actionTo_00008, actionTo_00009, actionTo_00010, actionTo_00011, actionTo_00012, actionValue_00001, actionValue_00002, actionValue_00003, actionValue_00004, actionValue_00005, actionValue_00006, actionValue_00007, actionValue_00008, actionValue_00009, actionValue_00010, actionValue_00011, actionValue_00012]
+**CONSTRAINTS**
+reify(ineq(actionFrom_00006, 6, -1), aux99)
+reify(ineq(actionFrom_00002, 13, -1), aux100)
+reify(ineq(actionFrom_00005, 10, -1), aux101)
+reify(ineq(actionFrom_00004, 7, -1), aux102)
+reify(ineq(actionFrom_00005, 3, -1), aux103)
+reify(ineq(actionFrom_00011, 4, -1), aux104)
+reify(ineq(actionFrom_00009, 5, -1), aux105)
+reify(ineq(actionFrom_00002, 7, -1), aux106)
+reify(ineq(actionFrom_00008, 5, -1), aux107)
+reify(ineq(actionFrom_00003, 4, -1), aux108)
+reify(ineq(actionFrom_00003, 10, -1), aux109)
+reify(ineq(actionFrom_00001, 5, -1), aux110)
+reify(ineq(actionFrom_00006, 7, -1), aux111)
+reify(ineq(actionFrom_00002, 12, -1), aux112)
+reify(ineq(actionFrom_00004, 8, -1), aux113)
+reify(ineq(actionFrom_00011, 3, -1), aux114)
+reify(ineq(actionFrom_00009, 4, -1), aux115)
+reify(ineq(actionFrom_00002, 6, -1), aux116)
+reify(ineq(actionFrom_00003, 3, -1), aux117)
+reify(ineq(actionFrom_00008, 6, -1), aux118)
+reify(ineq(actionFrom_00003, 11, -1), aux119)
+reify(ineq(actionFrom_00006, 4, -1), aux120)
+reify(ineq(actionFrom_00007, 4, -1), aux121)
+reify(ineq(actionFrom_00004, 9, -1), aux122)
+reify(ineq(actionFrom_00005, 9, -1), aux123)
+reify(ineq(actionFrom_00003, 6, -1), aux124)
+reify(ineq(actionFrom_00002, 9, -1), aux125)
+reify(ineq(actionFrom_00008, 7, -1), aux126)
+reify(ineq(actionFrom_00010, 3, -1), aux127)
+reify(ineq(actionFrom_00006, 5, -1), aux128)
+reify(ineq(actionFrom_00007, 3, -1), aux129)
+reify(ineq(actionFrom_00005, 8, -1), aux130)
+reify(ineq(actionFrom_00009, 6, -1), aux131)
+reify(ineq(actionFrom_00004, 10, -1), aux132)
+reify(ineq(actionFrom_00003, 5, -1), aux133)
+reify(ineq(actionFrom_00002, 8, -1), aux134)
+reify(ineq(actionFrom_00001, 10, -1), aux135)
+reify(ineq(actionFrom_00010, 4, -1), aux136)
+reify(ineq(actionFrom_00007, 6, -1), aux137)
+reify(ineq(actionFrom_00001, 8, -1), aux138)
+reify(ineq(actionFrom_00004, 3, -1), aux139)
+reify(ineq(actionFrom_00005, 7, -1), aux140)
+reify(ineq(actionFrom_00012, 3, -1), aux141)
+reify(ineq(actionFrom_00003, 8, -1), aux142)
+reify(ineq(actionFrom_00001, 13, -1), aux143)
+reify(ineq(actionFrom_00006, 3, -1), aux144)
+reify(ineq(actionFrom_00003, 12, -1), aux145)
+reify(ineq(actionFrom_00007, 5, -1), aux146)
+reify(ineq(actionFrom_00001, 9, -1), aux147)
+reify(ineq(actionFrom_00010, 5, -1), aux148)
+reify(ineq(actionFrom_00004, 4, -1), aux149)
+reify(ineq(actionFrom_00002, 10, -1), aux150)
+reify(ineq(actionFrom_00005, 6, -1), aux151)
+reify(ineq(actionFrom_00003, 7, -1), aux152)
+reify(ineq(actionFrom_00001, 14, -1), aux153)
+reify(ineq(actionFrom_00001, 6, -1), aux154)
+reify(ineq(actionFrom_00006, 8, -1), aux155)
+reify(ineq(actionFrom_00002, 11, -1), aux156)
+reify(ineq(actionFrom_00007, 8, -1), aux157)
+reify(ineq(actionFrom_00004, 5, -1), aux158)
+reify(ineq(actionFrom_00004, 11, -1), aux159)
+reify(ineq(actionFrom_00005, 5, -1), aux160)
+reify(ineq(actionFrom_00009, 3, -1), aux161)
+reify(ineq(actionFrom_00002, 5, -1), aux162)
+reify(ineq(actionFrom_00008, 3, -1), aux163)
+reify(ineq(actionFrom_00001, 11, -1), aux164)
+reify(ineq(actionFrom_00006, 9, -1), aux165)
+reify(ineq(actionFrom_00007, 7, -1), aux166)
+reify(ineq(actionFrom_00004, 6, -1), aux167)
+reify(ineq(actionFrom_00001, 7, -1), aux168)
+reify(ineq(actionFrom_00005, 4, -1), aux169)
+reify(ineq(actionFrom_00003, 9, -1), aux170)
+reify(ineq(actionFrom_00008, 4, -1), aux171)
+reify(ineq(actionFrom_00001, 12, -1), aux172)
+modulo(aux36,13,aux61)
+div(actionValue_00012, 13, aux62)
+div(actionValue_00010, 13, aux63)
+modulo(aux33,13,aux64)
+div(actionValue_00001, 13, aux65)
+modulo(actionValue_00001,13,aux66)
+div(aux14, 13, aux67)
+modulo(aux14,13,aux68)
+modulo(aux28,13,aux69)
+div(actionValue_00008, 13, aux70)
+div(actionValue_00009, 13, aux71)
+modulo(actionValue_00009,13,aux72)
+modulo(aux24,13,aux73)
+div(actionValue_00006, 13, aux74)
+modulo(actionValue_00005,13,aux75)
+div(actionValue_00005, 13, aux76)
+div(aux17, 13, aux77)
+modulo(actionValue_00003,13,aux78)
+modulo(aux35,13,aux79)
+div(aux35, 13, aux80)
+div(states_00013_00002, 13, aux81)
+modulo(states_00013_00002,13,aux82)
+div(actionValue_00004, 13, aux83)
+modulo(actionValue_00004,13,aux84)
+div(actionValue_00007, 13, aux85)
+modulo(aux26,13,aux86)
+watchelement([states_00002_00001, states_00002_00002, 13, states_00002_00004, states_00002_00005, states_00002_00006, states_00002_00007, states_00002_00008, states_00002_00009, states_00002_00010, states_00002_00011, states_00002_00012], aux54, aux14)
+watchelement([1, 37, 47, 0, 45, 2, 38, 12, 7, 39, 8], aux87, actionValue_00001)
+watchelement([14, 33, 13, 1, 37, 47, 0, 45, 2, 38, 12], aux57, aux16)
+watchelement([states_00003_00001, states_00003_00002, states_00003_00003, states_00003_00004, states_00003_00005, states_00003_00006, states_00003_00007, states_00003_00008, states_00003_00009, states_00003_00010, states_00003_00011], aux53, aux17)
+watchelement([states_00003_00002, states_00003_00003, states_00003_00004, states_00003_00005, states_00003_00006, states_00003_00007, states_00003_00008, states_00003_00009, states_00003_00010, states_00003_00011, states_00003_00012], aux88, actionValue_00003)
+watchelement([states_00002_00004, states_00002_00005, states_00002_00006, states_00002_00007, states_00002_00008, states_00002_00009, states_00002_00010, states_00002_00011, states_00002_00012, states_00002_00013], aux89, actionValue_00002)
+watchelement([states_00004_00002, states_00004_00003, states_00004_00004, states_00004_00005, states_00004_00006, states_00004_00007, states_00004_00008, states_00004_00009, states_00004_00010, states_00004_00011], aux90, actionValue_00004)
+watchelement([states_00004_00001, states_00004_00002, states_00004_00003, states_00004_00004, states_00004_00005, states_00004_00006, states_00004_00007, states_00004_00008, states_00004_00009, states_00004_00010], aux56, aux21)
+watchelement([states_00005_00001, states_00005_00002, states_00005_00003, states_00005_00004, states_00005_00005, states_00005_00006, states_00005_00007, states_00005_00008, states_00005_00009], aux55, aux22)
+watchelement([states_00005_00002, states_00005_00003, states_00005_00004, states_00005_00005, states_00005_00006, states_00005_00007, states_00005_00008, states_00005_00009, states_00005_00010], aux91, actionValue_00005)
+watchelement([states_00006_00001, states_00006_00002, states_00006_00003, states_00006_00004, states_00006_00005, states_00006_00006, states_00006_00007, states_00006_00008], aux50, aux24)
+watchelement([states_00006_00002, states_00006_00003, states_00006_00004, states_00006_00005, states_00006_00006, states_00006_00007, states_00006_00008, states_00006_00009], aux92, actionValue_00006)
+watchelement([states_00007_00001, states_00007_00002, states_00007_00003, states_00007_00004, states_00007_00005, states_00007_00006, states_00007_00007], aux49, aux26)
+watchelement([states_00007_00002, states_00007_00003, states_00007_00004, states_00007_00005, states_00007_00006, states_00007_00007, states_00007_00008], aux93, actionValue_00007)
+watchelement([states_00008_00001, states_00008_00002, states_00008_00003, states_00008_00004, states_00008_00005, states_00008_00006], aux52, aux28)
+watchelement([states_00008_00002, states_00008_00003, states_00008_00004, states_00008_00005, states_00008_00006, states_00008_00007], aux94, actionValue_00008)
+watchelement([states_00009_00002, states_00009_00003, states_00009_00004, states_00009_00005, states_00009_00006], aux95, actionValue_00009)
+watchelement([states_00009_00001, states_00009_00002, states_00009_00003, states_00009_00004, states_00009_00005], aux51, aux31)
+watchelement([states_00010_00002, states_00010_00003, states_00010_00004, states_00010_00005], aux96, actionValue_00010)
+watchelement([states_00010_00001, states_00010_00002, states_00010_00003, states_00010_00004], aux58, aux33)
+watchelement([states_00011_00002, states_00011_00003, states_00011_00004], aux97, actionValue_00011)
+watchelement([states_00011_00001, states_00011_00002, states_00011_00003], aux60, aux35)
+watchelement([states_00012_00001, states_00012_00002], aux59, aux36)
+watchelement([states_00012_00002, states_00012_00003], aux98, actionValue_00012)
+watched-or({gaceq(states_00005_00004,states_00006_00004),ineq(actionFrom_00005, 4, 0),w-literal(actionTo_00005,4)})
+reifyimply(gaceq(states_00006_00006,states_00007_00005), aux99)
+watched-or({gaceq(states_00007_00001,states_00008_00001),w-literal(actionTo_00007,1)})
+watched-or({gaceq(states_00007_00002,states_00008_00002),ineq(actionFrom_00007, 2, 0),w-literal(actionTo_00007,2)})
+watchelement([states_00002_00001, states_00002_00002, 13, states_00002_00004, states_00002_00005, states_00002_00006, states_00002_00007, states_00002_00008, states_00002_00009, states_00002_00010, states_00002_00011], aux57, actionValue_00001)
+watched-or({w-literal(states_00002_00013,39),ineq(actionFrom_00001, 13, 0)})
+reifyimply(gaceq(states_00002_00013,states_00003_00012), aux100)
+reifyimply(gaceq(states_00005_00010,states_00006_00009), aux101)
+reifyimply(gaceq(states_00004_00007,states_00005_00006), aux102)
+watched-or({ineq(actionFrom_00006, 6, 0),gaceq(states_00006_00006,states_00007_00006),w-literal(actionTo_00006,6)})
+watched-or({gaceq(states_00002_00004,states_00003_00004),ineq(actionFrom_00002, 4, 0),w-literal(actionTo_00002,4)})
+watched-or({gaceq(states_00005_00009,states_00006_00009),ineq(actionFrom_00005, 9, 0),w-literal(actionTo_00005,9)})
+reifyimply(gaceq(states_00005_00003,states_00006_00002), aux103)
+watched-or({gaceq(states_00004_00006,states_00003_00006),ineq(actionFrom_00003, 6, 0),w-literal(actionTo_00003,6)})
+reifyimply(gaceq(states_00012_00003,states_00011_00004), aux104)
+reifyimply(gaceq(states_00009_00005,states_00010_00004), aux105)
+reifyimply(gaceq(states_00002_00007,states_00003_00006), aux106)
+watched-or({w-literal(states_00002_00007,0),ineq(actionFrom_00001, 7, 0),w-literal(actionTo_00001,7)})
+reifyimply(gaceq(states_00009_00004,states_00008_00005), aux107)
+watched-or({w-literal(states_00002_00012,7),ineq(actionFrom_00001, 12, 0)})
+reifyimply(gaceq(states_00004_00003,states_00003_00004), aux108)
+watched-or({gaceq(states_00009_00004,states_00008_00004),ineq(actionFrom_00008, 4, 0),w-literal(actionTo_00008,4)})
+watched-or({gaceq(states_00004_00002,states_00005_00002),ineq(actionFrom_00004, 2, 0),w-literal(actionTo_00004,2)})
+reifyimply(gaceq(states_00004_00009,states_00003_00010), aux109)
+reifyimply(w-literal(states_00002_00004,37), aux110)
+watched-or({ineq(actionFrom_00010, 3, 0),w-literal(actionTo_00010,3),gaceq(states_00010_00003,states_00011_00003)})
+reifyimply(gaceq(states_00006_00007,states_00007_00006), aux111)
+watched-or({gaceq(states_00007_00007,states_00008_00007),ineq(actionFrom_00007, 7, 0),w-literal(actionTo_00007,7)})
+reifyimply(gaceq(states_00002_00012,states_00003_00011), aux112)
+watched-or({gaceq(states_00004_00003,states_00005_00003),ineq(actionFrom_00004, 3, 0),w-literal(actionTo_00004,3)})
+watched-or({gaceq(states_00009_00003,states_00008_00003),ineq(actionFrom_00008, 3, 0),w-literal(actionTo_00008,3)})
+reifyimply(gaceq(states_00004_00008,states_00005_00007), aux113)
+watchelement([states_00004_00001, states_00004_00002, states_00004_00003, states_00004_00004, states_00004_00005, states_00004_00006, states_00004_00007, states_00004_00008, states_00004_00009, states_00004_00010, states_00004_00011], aux53, actionValue_00003)
+watchelement([states_00009_00001, states_00009_00002, states_00009_00003, states_00009_00004, states_00009_00005, states_00009_00006], aux52, actionValue_00008)
+reifyimply(gaceq(states_00012_00002,states_00011_00003), aux114)
+watched-or({modulo(actionValue_00012,13,aux61),div(aux36, 13, aux62)})
+watched-or({gaceq(states_00004_00010,states_00003_00010),ineq(actionFrom_00003, 10, 0),w-literal(actionTo_00003,10)})
+watched-or({div(aux33, 13, aux63),modulo(actionValue_00010,13,aux64)})
+reifyimply(gaceq(states_00009_00004,states_00010_00003), aux115)
+reifyimply(gaceq(states_00002_00006,states_00003_00005), aux116)
+reifyimply(gaceq(states_00004_00002,states_00003_00003), aux117)
+watched-or({gaceq(states_00004_00008,states_00005_00008),ineq(actionFrom_00004, 8, 0),w-literal(actionTo_00004,8)})
+diseq(actionTo_00010,actionFrom_00010)
+watched-or({gaceq(states_00002_00005,states_00003_00005),ineq(actionFrom_00002, 5, 0),w-literal(actionTo_00002,5)})
+reifyimply(gaceq(states_00009_00005,states_00008_00006), aux118)
+watched-or({gaceq(states_00012_00002,states_00013_00002),ineq(actionFrom_00012, 2, 0),w-literal(actionTo_00012,2)})
+watched-or({div(aux16, 13, aux65),modulo(aux16,13,aux66)})
+watched-or({w-literal(states_00002_00010,38),ineq(actionFrom_00001, 10, 0),w-literal(actionTo_00001,10)})
+watched-or({gaceq(states_00005_00008,states_00006_00008),ineq(actionFrom_00005, 8, 0),w-literal(actionTo_00005,8)})
+watched-or({gaceq(states_00004_00009,states_00005_00009),ineq(actionFrom_00004, 9, 0),w-literal(actionTo_00004,9)})
+reifyimply(gaceq(states_00004_00010,states_00003_00011), aux119)
+reifyimply(gaceq(states_00006_00004,states_00007_00003), aux120)
+watched-or({w-literal(actionTo_00010,1),gaceq(states_00010_00001,states_00011_00001)})
+diseq(actionTo_00008,actionFrom_00008)
+reifyimply(gaceq(states_00007_00004,states_00008_00003), aux121)
+watched-or({ineq(actionFrom_00011, 3, 0),gaceq(states_00012_00003,states_00011_00003),w-literal(actionTo_00011,3)})
+reifyimply(gaceq(states_00004_00009,states_00005_00008), aux122)
+reifyimply(gaceq(states_00005_00009,states_00006_00008), aux123)
+reifyimply(gaceq(states_00004_00005,states_00003_00006), aux124)
+reifyimply(gaceq(states_00002_00009,states_00003_00008), aux125)
+watched-or({gaceq(states_00012_00001,states_00011_00001),w-literal(actionTo_00011,1)})
+watched-or({ineq(actionFrom_00010, 4, 0),w-literal(actionTo_00010,4),gaceq(states_00010_00004,states_00011_00004)})
+diseq(actionTo_00009,actionFrom_00009)
+watchelement([states_00005_00001, states_00005_00002, states_00005_00003, states_00005_00004, states_00005_00005, states_00005_00006, states_00005_00007, states_00005_00008, states_00005_00009, states_00005_00010], aux56, actionValue_00004)
+reifyimply(gaceq(states_00009_00006,states_00008_00007), aux126)
+reifyimply(gaceq(states_00010_00003,states_00011_00002), aux127)
+watched-or({gaceq(states_00004_00005,states_00003_00005),ineq(actionFrom_00003, 5, 0),w-literal(actionTo_00003,5)})
+reifyimply(gaceq(states_00006_00005,states_00007_00004), aux128)
+watched-or({w-literal(states_00002_00008,45),ineq(actionFrom_00001, 8, 0),w-literal(actionTo_00001,8)})
+watchelement([states_00003_00001, states_00003_00002, states_00003_00003, states_00003_00004, states_00003_00005, states_00003_00006, states_00003_00007, states_00003_00008, states_00003_00009, states_00003_00010, states_00003_00011, states_00003_00012], aux54, actionValue_00002)
+reifyimply(gaceq(states_00007_00003,states_00008_00002), aux129)
+watched-or({gaceq(states_00002_00006,states_00003_00006),ineq(actionFrom_00002, 6, 0),w-literal(actionTo_00002,6)})
+watched-or({ineq(actionFrom_00009, 5, 0),w-literal(actionTo_00009,5),gaceq(states_00009_00005,states_00010_00005)})
+watched-or({ineq(actionFrom_00006, 2, 0),gaceq(states_00006_00002,states_00007_00002),w-literal(actionTo_00006,2)})
+reifyimply(gaceq(states_00005_00008,states_00006_00007), aux130)
+watched-or({gaceq(states_00009_00005,states_00008_00005),ineq(actionFrom_00008, 5, 0),w-literal(actionTo_00008,5)})
+watched-or({w-literal(states_00002_00011,12),ineq(actionFrom_00001, 11, 0),w-literal(actionTo_00001,11)})
+watched-or({div(actionValue_00002, 13, aux67),modulo(actionValue_00002,13,aux68)})
+reifyimply(gaceq(states_00009_00006,states_00010_00005), aux131)
+watched-or({gaceq(states_00005_00003,states_00006_00003),ineq(actionFrom_00005, 3, 0),w-literal(actionTo_00005,3)})
+reifyimply(gaceq(states_00004_00010,states_00005_00009), aux132)
+reifyimply(gaceq(states_00004_00004,states_00003_00005), aux133)
+reifyimply(gaceq(states_00002_00008,states_00003_00007), aux134)
+reifyimply(w-literal(states_00002_00009,38), aux135)
+watched-or({gaceq(states_00007_00006,states_00008_00006),ineq(actionFrom_00007, 6, 0),w-literal(actionTo_00007,6)})
+watched-or({ineq(actionFrom_00006, 7, 0),gaceq(states_00006_00007,states_00007_00007),w-literal(actionTo_00006,7)})
+watched-or({gaceq(states_00004_00004,states_00005_00004),ineq(actionFrom_00004, 4, 0),w-literal(actionTo_00004,4)})
+watched-or({gaceq(states_00002_00010,states_00003_00010),ineq(actionFrom_00002, 10, 0),w-literal(actionTo_00002,10)})
+watchelement([states_00012_00001, states_00012_00002, states_00012_00003], aux60, actionValue_00011)
+watched-or({ineq(actionFrom_00006, 3, 0),gaceq(states_00006_00003,states_00007_00003),w-literal(actionTo_00006,3)})
+reifyimply(gaceq(states_00010_00004,states_00011_00003), aux136)
+watched-or({gaceq(states_00004_00003,states_00003_00003),ineq(actionFrom_00003, 3, 0),w-literal(actionTo_00003,3)})
+watched-or({gaceq(states_00004_00005,states_00005_00005),ineq(actionFrom_00004, 5, 0),w-literal(actionTo_00004,5)})
+watched-or({gaceq(states_00007_00005,states_00008_00005),ineq(actionFrom_00007, 5, 0),w-literal(actionTo_00007,5)})
+reifyimply(gaceq(states_00007_00006,states_00008_00005), aux137)
+diseq(actionTo_00004,actionFrom_00004)
+reifyimply(w-literal(states_00002_00007,45), aux138)
+reifyimply(gaceq(states_00004_00003,states_00005_00002), aux139)
+reifyimply(gaceq(states_00005_00007,states_00006_00006), aux140)
+watchelement([states_00011_00001, states_00011_00002, states_00011_00003, states_00011_00004], aux58, actionValue_00010)
+watched-or({gaceq(states_00002_00007,states_00003_00007),ineq(actionFrom_00002, 7, 0),w-literal(actionTo_00002,7)})
+watched-or({w-literal(actionTo_00009,1),gaceq(states_00009_00001,states_00010_00001)})
+reifyimply(gaceq(states_00012_00003,states_00013_00002), aux141)
+reifyimply(gaceq(states_00004_00007,states_00003_00008), aux142)
+watched-or({modulo(actionValue_00008,13,aux69),div(aux28, 13, aux70)})
+diseq(actionTo_00005,actionFrom_00005)
+watched-or({gaceq(states_00012_00001,states_00013_00001),w-literal(actionTo_00012,1)})
+reifyimply(w-literal(states_00002_00012,39), aux143)
+watched-or({ineq(actionFrom_00009, 4, 0),w-literal(actionTo_00009,4),gaceq(states_00009_00004,states_00010_00004)})
+watched-or({gaceq(states_00009_00006,states_00008_00006),ineq(actionFrom_00008, 6, 0),w-literal(actionTo_00008,6)})
+reifyimply(gaceq(states_00006_00003,states_00007_00002), aux144)
+watched-or({w-literal(states_00002_00004,1),ineq(actionFrom_00001, 4, 0),w-literal(actionTo_00001,4)})
+watched-or({div(aux31, 13, aux71),modulo(aux31,13,aux72)})
+reifyimply(gaceq(states_00004_00011,states_00003_00012), aux145)
+watched-or({gaceq(states_00005_00002,states_00006_00002),ineq(actionFrom_00005, 2, 0),w-literal(actionTo_00005,2)})
+watched-or({gaceq(states_00002_00011,states_00003_00011),ineq(actionFrom_00002, 11, 0),w-literal(actionTo_00002,11)})
+watched-or({gaceq(states_00004_00009,states_00003_00009),ineq(actionFrom_00003, 9, 0),w-literal(actionTo_00003,9)})
+reifyimply(gaceq(states_00007_00005,states_00008_00004), aux146)
+watched-or({ineq(actionFrom_00006, 8, 0),gaceq(states_00006_00008,states_00007_00008),w-literal(actionTo_00006,8)})
+diseq(actionTo_00006,actionFrom_00006)
+reifyimply(w-literal(states_00002_00008,2), aux147)
+reifyimply(gaceq(states_00010_00005,states_00011_00004), aux148)
+reifyimply(gaceq(states_00004_00004,states_00005_00003), aux149)
+reifyimply(gaceq(states_00002_00010,states_00003_00009), aux150)
+watched-or({gaceq(states_00004_00004,states_00003_00004),ineq(actionFrom_00003, 4, 0),w-literal(actionTo_00003,4)})
+reifyimply(gaceq(states_00005_00006,states_00006_00005), aux151)
+watched-or({gaceq(states_00005_00007,states_00006_00007),ineq(actionFrom_00005, 7, 0),w-literal(actionTo_00005,7)})
+reifyimply(gaceq(states_00004_00006,states_00003_00007), aux152)
+watched-or({w-literal(states_00002_00009,2),ineq(actionFrom_00001, 9, 0),w-literal(actionTo_00001,9)})
+diseq(actionTo_00007,actionFrom_00007)
+reifyimply(w-literal(states_00002_00013,8), aux153)
+watched-or({ineq(actionFrom_00011, 2, 0),gaceq(states_00012_00002,states_00011_00002),w-literal(actionTo_00011,2)})
+watched-or({modulo(actionValue_00006,13,aux73),div(aux24, 13, aux74)})
+watched-or({ineq(actionFrom_00009, 3, 0),w-literal(actionTo_00009,3),gaceq(states_00009_00003,states_00010_00003)})
+reifyimply(w-literal(states_00002_00005,47), aux154)
+watched-or({gaceq(states_00002_00008,states_00003_00008),ineq(actionFrom_00002, 8, 0),w-literal(actionTo_00002,8)})
+watched-or({gaceq(states_00004_00007,states_00003_00007),ineq(actionFrom_00003, 7, 0),w-literal(actionTo_00003,7)})
+reifyimply(gaceq(states_00006_00008,states_00007_00007), aux155)
+watched-or({gaceq(states_00004_00011,states_00003_00011),ineq(actionFrom_00003, 11, 0),w-literal(actionTo_00003,11)})
+reifyimply(gaceq(states_00002_00011,states_00003_00010), aux156)
+watched-or({w-literal(states_00002_00006,47),ineq(actionFrom_00001, 6, 0),w-literal(actionTo_00001,6)})
+reifyimply(gaceq(states_00007_00008,states_00008_00007), aux157)
+watchelement([states_00006_00001, states_00006_00002, states_00006_00003, states_00006_00004, states_00006_00005, states_00006_00006, states_00006_00007, states_00006_00008, states_00006_00009], aux55, actionValue_00005)
+diseq(actionTo_00011,actionFrom_00011)
+watched-or({gaceq(states_00004_00010,states_00005_00010),ineq(actionFrom_00004, 10, 0),w-literal(actionTo_00004,10)})
+watched-or({modulo(aux22,13,aux75),div(aux22, 13, aux76)})
+reifyimply(gaceq(states_00004_00005,states_00005_00004), aux158)
+watchelement([states_00010_00001, states_00010_00002, states_00010_00003, states_00010_00004, states_00010_00005], aux51, actionValue_00009)
+reifyimply(gaceq(states_00004_00011,states_00005_00010), aux159)
+reifyimply(gaceq(states_00005_00005,states_00006_00004), aux160)
+watched-or({gaceq(states_00005_00005,states_00006_00005),ineq(actionFrom_00005, 5, 0),w-literal(actionTo_00005,5)})
+reifyimply(gaceq(states_00009_00003,states_00010_00002), aux161)
+reifyimply(gaceq(states_00002_00005,states_00003_00004), aux162)
+watched-or({gaceq(states_00004_00002,states_00003_00002),ineq(actionFrom_00003, 2, 0),w-literal(actionTo_00003,2)})
+watched-or({gaceq(states_00007_00004,states_00008_00004),ineq(actionFrom_00007, 4, 0),w-literal(actionTo_00007,4)})
+watched-or({gaceq(states_00004_00006,states_00005_00006),ineq(actionFrom_00004, 6, 0),w-literal(actionTo_00004,6)})
+reifyimply(gaceq(states_00009_00002,states_00008_00003), aux163)
+watched-or({gaceq(states_00002_00012,states_00003_00012),ineq(actionFrom_00002, 12, 0),w-literal(actionTo_00002,12)})
+watched-or({div(actionValue_00003, 13, aux77),modulo(aux17,13,aux78)})
+watchelement([states_00008_00001, states_00008_00002, states_00008_00003, states_00008_00004, states_00008_00005, states_00008_00006, states_00008_00007], aux49, actionValue_00007)
+diseq(actionTo_00012,actionFrom_00012)
+diseq(actionTo_00001,actionFrom_00001)
+watched-or({ineq(actionFrom_00006, 5, 0),gaceq(states_00006_00005,states_00007_00005),w-literal(actionTo_00006,5)})
+reifyimply(w-literal(states_00002_00010,12), aux164)
+watched-or({gaceq(states_00006_00001,states_00007_00001),w-literal(actionTo_00006,1)})
+watched-or({gaceq(states_00005_00006,states_00006_00006),ineq(actionFrom_00005, 6, 0),w-literal(actionTo_00005,6)})
+watched-or({gaceq(states_00009_00001,states_00008_00001),w-literal(actionTo_00008,1)})
+watchelement([states_00007_00001, states_00007_00002, states_00007_00003, states_00007_00004, states_00007_00005, states_00007_00006, states_00007_00007, states_00007_00008], aux50, actionValue_00006)
+watched-or({w-literal(aux47,1),w-literal(aux47,3)})
+watched-or({w-literal(aux48,1),w-literal(aux48,3)})
+watched-or({w-literal(aux45,1),w-literal(aux45,3)})
+watched-or({w-literal(aux46,1),w-literal(aux46,3)})
+watched-or({w-literal(aux43,1),w-literal(aux43,3)})
+reifyimply(gaceq(states_00006_00009,states_00007_00008), aux165)
+watched-or({w-literal(aux44,1),w-literal(aux44,3)})
+watched-or({w-literal(aux41,1),w-literal(aux41,3)})
+watched-or({w-literal(aux42,1),w-literal(aux42,3)})
+watched-or({w-literal(aux40,1),w-literal(aux40,3)})
+watched-or({modulo(actionValue_00011,13,aux79),div(actionValue_00011, 13, aux80)})
+reifyimply(gaceq(states_00007_00007,states_00008_00006), aux166)
+watched-or({gaceq(states_00004_00007,states_00005_00007),ineq(actionFrom_00004, 7, 0),w-literal(actionTo_00004,7)})
+watched-or({div(states_00013_00001, 13, aux81),modulo(states_00013_00001,13,aux82)})
+reifyimply(gaceq(states_00004_00006,states_00005_00005), aux167)
+watched-or({w-literal(aux39,1),w-literal(aux39,3)})
+watched-or({w-literal(aux38,1),w-literal(aux38,3)})
+diseq(actionTo_00002,actionFrom_00002)
+watched-or({div(aux21, 13, aux83),modulo(aux21,13,aux84)})
+reifyimply(w-literal(states_00002_00006,0), aux168)
+watched-or({ineq(actionFrom_00006, 4, 0),gaceq(states_00006_00004,states_00007_00004),w-literal(actionTo_00006,4)})
+watched-or({gaceq(states_00002_00009,states_00003_00009),ineq(actionFrom_00002, 9, 0),w-literal(actionTo_00002,9)})
+reifyimply(gaceq(states_00005_00004,states_00006_00003), aux169)
+watched-or({w-literal(states_00002_00002,33),w-literal(actionTo_00001,2)})
+watchelement([states_00013_00001, states_00013_00002], aux59, actionValue_00012)
+watched-or({w-literal(states_00002_00001,14),w-literal(actionTo_00001,1)})
+watched-or({ineq(actionFrom_00010, 2, 0),w-literal(actionTo_00010,2),gaceq(states_00010_00002,states_00011_00002)})
+watched-or({w-literal(states_00002_00005,37),ineq(actionFrom_00001, 5, 0),w-literal(actionTo_00001,5)})
+watched-or({w-literal(states_00003_00003,13),w-literal(actionTo_00002,3)})
+reifyimply(gaceq(states_00004_00008,states_00003_00009), aux170)
+watched-or({gaceq(states_00002_00002,states_00003_00002),w-literal(actionTo_00002,2)})
+watched-or({gaceq(states_00007_00003,states_00008_00003),ineq(actionFrom_00007, 3, 0),w-literal(actionTo_00007,3)})
+watched-or({gaceq(states_00002_00001,states_00003_00001),w-literal(actionTo_00002,1)})
+reifyimply(gaceq(states_00009_00003,states_00008_00004), aux171)
+watched-or({gaceq(states_00004_00001,states_00003_00001),w-literal(actionTo_00003,1)})
+watched-or({gaceq(states_00004_00001,states_00005_00001),w-literal(actionTo_00004,1)})
+watched-or({div(aux26, 13, aux85),modulo(actionValue_00007,13,aux86)})
+watched-or({gaceq(states_00004_00008,states_00003_00008),ineq(actionFrom_00003, 8, 0),w-literal(actionTo_00003,8)})
+watched-or({gaceq(states_00005_00001,states_00006_00001),w-literal(actionTo_00005,1)})
+diseq(actionTo_00003,actionFrom_00003)
+reifyimply(w-literal(states_00002_00011,7), aux172)
+watched-or({ineq(actionFrom_00009, 2, 0),w-literal(actionTo_00009,2),gaceq(states_00009_00002,states_00010_00002)})
+watched-or({gaceq(states_00009_00002,states_00008_00002),ineq(actionFrom_00008, 2, 0),w-literal(actionTo_00008,2)})
+sumleq([actionFrom_00001,-4],aux87)
+sumgeq([actionFrom_00001,-4],aux87)
+sumleq([actionFrom_00003,-2],aux88)
+sumgeq([actionFrom_00003,-2],aux88)
+sumleq([actionFrom_00002,-4],aux89)
+sumgeq([actionFrom_00002,-4],aux89)
+sumleq([actionFrom_00004,-2],aux90)
+sumgeq([actionFrom_00004,-2],aux90)
+sumleq([actionFrom_00005,-2],aux91)
+sumgeq([actionFrom_00005,-2],aux91)
+sumleq([actionFrom_00006,-2],aux92)
+sumgeq([actionFrom_00006,-2],aux92)
+sumleq([actionFrom_00007,-2],aux93)
+sumgeq([actionFrom_00007,-2],aux93)
+sumleq([actionFrom_00008,-2],aux94)
+sumgeq([actionFrom_00008,-2],aux94)
+sumleq([actionFrom_00009,-2],aux95)
+sumgeq([actionFrom_00009,-2],aux95)
+sumleq([actionFrom_00010,-2],aux96)
+sumgeq([actionFrom_00010,-2],aux96)
+sumleq([actionFrom_00011,-2],aux97)
+sumgeq([actionFrom_00011,-2],aux97)
+sumleq([actionFrom_00012,-2],aux98)
+sumgeq([actionFrom_00012,-2],aux98)
+weightedsumleq([-1,1],[actionTo_00011,actionFrom_00011],aux38)
+weightedsumgeq([-1,1],[actionTo_00011,actionFrom_00011],aux38)
+weightedsumleq([-1,1],[actionTo_00010,actionFrom_00010],aux39)
+weightedsumgeq([-1,1],[actionTo_00010,actionFrom_00010],aux39)
+weightedsumleq([-1,1],[actionTo_00009,actionFrom_00009],aux40)
+weightedsumgeq([-1,1],[actionTo_00009,actionFrom_00009],aux40)
+weightedsumleq([-1,1],[actionTo_00007,actionFrom_00007],aux41)
+weightedsumgeq([-1,1],[actionTo_00007,actionFrom_00007],aux41)
+weightedsumleq([-1,1],[actionTo_00008,actionFrom_00008],aux42)
+weightedsumgeq([-1,1],[actionTo_00008,actionFrom_00008],aux42)
+weightedsumleq([-1,1],[actionTo_00005,actionFrom_00005],aux43)
+weightedsumgeq([-1,1],[actionTo_00005,actionFrom_00005],aux43)
+weightedsumleq([-1,1],[actionTo_00006,actionFrom_00006],aux44)
+weightedsumgeq([-1,1],[actionTo_00006,actionFrom_00006],aux44)
+weightedsumleq([-1,1],[actionTo_00003,actionFrom_00003],aux45)
+weightedsumgeq([-1,1],[actionTo_00003,actionFrom_00003],aux45)
+weightedsumleq([-1,1],[actionTo_00004,actionFrom_00004],aux46)
+weightedsumgeq([-1,1],[actionTo_00004,actionFrom_00004],aux46)
+weightedsumleq([-1,1],[actionTo_00001,actionFrom_00001],aux47)
+weightedsumgeq([-1,1],[actionTo_00001,actionFrom_00001],aux47)
+weightedsumleq([-1,1],[actionTo_00002,actionFrom_00002],aux48)
+weightedsumgeq([-1,1],[actionTo_00002,actionFrom_00002],aux48)
+sumleq([actionTo_00007,-1],aux49)
+sumgeq([actionTo_00007,-1],aux49)
+sumleq([actionTo_00006,-1],aux50)
+sumgeq([actionTo_00006,-1],aux50)
+sumleq([actionTo_00009,-1],aux51)
+sumgeq([actionTo_00009,-1],aux51)
+sumleq([actionTo_00008,-1],aux52)
+sumgeq([actionTo_00008,-1],aux52)
+sumleq([actionTo_00003,-1],aux53)
+sumgeq([actionTo_00003,-1],aux53)
+sumleq([actionTo_00002,-1],aux54)
+sumgeq([actionTo_00002,-1],aux54)
+sumleq([actionTo_00005,-1],aux55)
+sumgeq([actionTo_00005,-1],aux55)
+sumleq([actionTo_00004,-1],aux56)
+sumgeq([actionTo_00004,-1],aux56)
+sumleq([actionTo_00001,-1],aux57)
+sumgeq([actionTo_00001,-1],aux57)
+sumleq([actionTo_00010,-1],aux58)
+sumgeq([actionTo_00010,-1],aux58)
+sumleq([actionTo_00012,-1],aux59)
+sumgeq([actionTo_00012,-1],aux59)
+sumleq([actionTo_00011,-1],aux60)
+sumgeq([actionTo_00011,-1],aux60)
+weightedsumleq([-1,1],[actionTo_00012,actionFrom_00012],1)
+weightedsumgeq([-1,1],[actionTo_00012,actionFrom_00012],1)
+**EOF**

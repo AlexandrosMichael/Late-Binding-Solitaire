@@ -1,0 +1,19 @@
+# !/bin/bash
+java LBSGen 12 4 > GeneratedInstances/LBS12_4.param
+java LBSGen 12 17 > GeneratedInstances/LBS12_17.param
+java LBSGen 13 2 > GeneratedInstances/LBS13_2.param
+java LBSGen 13 8 > GeneratedInstances/LBS13_8.param
+java LBSGen 14 11 > GeneratedInstances/LBS14_11.param
+java LBSGen 14 17 > GeneratedInstances/LBS14_17.param
+java LBSGen 15 21 > GeneratedInstances/LBS15_21.param
+java LBSGen 15 29 > GeneratedInstances/LBS15_29.param
+java LBSGen 16 17 > GeneratedInstances/LBS16_17.param
+java LBSGen 16 42 > GeneratedInstances/LBS16_42.param
+java LBSGen 17 7 > GeneratedInstances/LBS17_7.param
+java LBSGen 17 32 > GeneratedInstances/LBS17_32.param
+java LBSGen 18 21 > GeneratedInstances/LBS18_21.param
+java LBSGen 18 29 > GeneratedInstances/LBS18_29.param
+java LBSGen 19 4 > GeneratedInstances/LBS19_4.param
+java LBSGen 19 65 > GeneratedInstances/LBS19_65.param
+java LBSGen 20 0 > GeneratedInstances/LBS20_0.param
+java LBSGen 20 20 > GeneratedInstances/LBS20_20.param

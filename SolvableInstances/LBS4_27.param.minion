@@ -1,0 +1,91 @@
+MINION 3
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# CSE_active_number = 7
+# CSE_active_eliminated_expressions = 18
+# CSE_active_total_size = 43
+**VARIABLES**
+DISCRETE states_00002_00001 #
+{9..22}
+DISCRETE states_00002_00002 #
+{1..9}
+DISCRETE states_00003_00001 #
+{1..9}
+DISCRETE actionFrom_00001 #
+{2..4}
+DISCRETE actionFrom_00002 #
+{2..3}
+DISCRETE actionTo_00001 #
+{1..3}
+DISCRETE actionTo_00002 #
+{1..2}
+DISCRETE actionValue_00001 #
+{3..9}
+**CONSTRAINTS**
+w-inintervalset(actionValue_00001, [3,3,9,9])
+**VARIABLES**
+DISCRETE actionValue_00002 #
+{1..9}
+DISCRETE aux15 #Active-CSE: 2 occurrences of this expression or equivalent: Element([22, 9, 1], (actionTo_00001 + -1))
+{1..22}
+**CONSTRAINTS**
+w-inintervalset(aux15, [1,1,9,9,22,22])
+**VARIABLES**
+DISCRETE aux16 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00002_00001, states_00002_00002], (actionTo_00002 + -1))
+{1..22}
+BOOL aux19 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00002 + -1)
+DISCRETE aux20 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00001 + -1)
+{0..2}
+DISCRETE aux22 #
+{3..9}
+**CONSTRAINTS**
+w-inintervalset(aux22, [3,3,9,9])
+**VARIABLES**
+DISCRETE aux23 #
+{1..9}
+DISCRETE aux25 #(actionFrom_00001 + -2)
+{0..2}
+BOOL aux26 #(actionFrom_00002 + -2)
+BOOL aux27 #(actionFrom_00001<3)
+**VARIABLES**
+ALIAS cards[4]=[22, 9, 1, 3]
+**SEARCH**
+PRINT[[states_00002_00001],[states_00002_00002],[states_00003_00001],[actionFrom_00001],[actionFrom_00002],[actionTo_00001],[actionTo_00002],[actionValue_00001],[actionValue_00002]]
+VARORDER STATIC [states_00002_00001, states_00002_00002, states_00003_00001, actionFrom_00001, actionFrom_00002, actionTo_00001, actionTo_00002, actionValue_00001, actionValue_00002]
+**CONSTRAINTS**
+reify(ineq(actionFrom_00001, 3, -1), aux27)
+div(actionValue_00001, 13, 0)
+modulo(actionValue_00001,13,aux22)
+modulo(actionValue_00002,13,aux23)
+div(actionValue_00002, 13, 0)
+watchelement([9, 1, 3], aux25, actionValue_00001)
+watchelement([22, 9, 1], aux20, aux15)
+watchelement([states_00002_00001, states_00002_00002], aux19, aux16)
+watchelement([states_00002_00002, 3], aux26, actionValue_00002)
+reifyimply(w-literal(states_00002_00002,1), aux27)
+watched-or({div(aux15, 13, 0),modulo(aux15,13,aux22)})
+watched-or({modulo(aux16,13,aux23),div(aux16, 13, 0)})
+watchelement([states_00002_00001, states_00002_00002, 3], aux20, actionValue_00001)
+watched-or({ineq(actionFrom_00001, 3, 0),w-literal(actionTo_00001,3)})
+watched-or({w-literal(states_00002_00002,9),ineq(actionFrom_00001, 2, 0),w-literal(actionTo_00001,2)})
+diseq(actionTo_00002,actionFrom_00002)
+watched-or({w-literal(states_00002_00002,3),ineq(actionFrom_00002, 2, 0),w-literal(actionTo_00002,2)})
+watched-or({w-literal(states_00002_00001,22),w-literal(actionTo_00001,1)})
+watched-or({modulo(states_00003_00001,13,3),div(states_00003_00001, 13, 0)})
+watched-or({gaceq(states_00002_00001,states_00003_00001),w-literal(actionTo_00002,1)})
+diseq(actionTo_00001,actionFrom_00001)
+watchelement([states_00003_00001, 3], aux19, actionValue_00002)
+sumleq([actionFrom_00001,-2],aux25)
+sumgeq([actionFrom_00001,-2],aux25)
+sumleq([actionFrom_00002,-2],aux26)
+sumgeq([actionFrom_00002,-2],aux26)
+weightedsumleq([-1,1],[actionTo_00001,actionFrom_00001],1)
+weightedsumgeq([-1,1],[actionTo_00001,actionFrom_00001],1)
+sumleq([actionTo_00002,-1],aux19)
+sumgeq([actionTo_00002,-1],aux19)
+sumleq([actionTo_00001,-1],aux20)
+sumgeq([actionTo_00001,-1],aux20)
+weightedsumleq([-1,1],[actionTo_00002,actionFrom_00002],1)
+weightedsumgeq([-1,1],[actionTo_00002,actionFrom_00002],1)
+**EOF**

@@ -1,0 +1,163 @@
+MINION 3
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# CSE_active_number = 11
+# CSE_active_eliminated_expressions = 28
+# CSE_active_total_size = 68
+**VARIABLES**
+DISCRETE states_00002_00001 #
+{7..46}
+DISCRETE states_00002_00002 #
+{4..17}
+DISCRETE states_00002_00003 #
+{17..23}
+DISCRETE states_00002_00004 #
+{4..23}
+DISCRETE states_00003_00001 #
+{4..46}
+DISCRETE states_00003_00002 #
+{4..23}
+DISCRETE states_00003_00003 #
+{4..23}
+DISCRETE states_00004_00001 #
+{4..46}
+DISCRETE states_00004_00002 #
+{4..23}
+DISCRETE actionFrom_00001 #
+{2..5}
+DISCRETE actionFrom_00002 #
+{2..4}
+DISCRETE actionFrom_00003 #
+{2..3}
+DISCRETE actionTo_00001 #
+{1..3}
+DISCRETE actionTo_00002 #
+{1..3}
+DISCRETE actionTo_00003 #
+{1..2}
+DISCRETE actionValue_00001 #
+{4..23}
+**CONSTRAINTS**
+w-inintervalset(actionValue_00001, [4,4,7,7,17,17,23,23])
+**VARIABLES**
+DISCRETE actionValue_00002 #
+{4..23}
+DISCRETE actionValue_00003 #
+{4..23}
+DISCRETE aux16 #Active-CSE: 2 occurrences of this expression or equivalent: Element([46, 7, 17], (actionTo_00001 + -1))
+{7..46}
+**CONSTRAINTS**
+w-inintervalset(aux16, [7,7,17,17,46,46])
+**VARIABLES**
+DISCRETE aux17 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00002_00001, states_00002_00002, states_00002_00003], (actionTo_00002 + -1))
+{4..46}
+DISCRETE aux18 #Active-CSE: 2 occurrences of this expression or equivalent: Element([states_00003_00001, states_00003_00002], (actionTo_00003 + -1))
+{4..46}
+DISCRETE aux20 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00001 + actionFrom_00001)
+{1..3}
+DISCRETE aux21 #Active-CSE: 2 occurrences of this expression or equivalent: ( - actionTo_00002 + actionFrom_00002)
+{1..3}
+BOOL aux22 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00003 + -1)
+DISCRETE aux23 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00002 + -1)
+{0..2}
+DISCRETE aux24 #Active-CSE: 2 occurrences of this expression or equivalent: (actionTo_00001 + -1)
+{0..2}
+BOOL aux25 #
+DISCRETE aux26 #
+{4..7}
+**CONSTRAINTS**
+w-inintervalset(aux26, [4,4,7,7])
+**VARIABLES**
+BOOL aux27 #
+DISCRETE aux28 #
+{0..12}
+BOOL aux29 #
+DISCRETE aux30 #
+{0..12}
+BOOL aux31 #
+DISCRETE aux32 #
+{0..12}
+DISCRETE aux33 #(actionFrom_00001 + -2)
+{0..3}
+DISCRETE aux34 #(actionFrom_00002 + -2)
+{0..2}
+BOOL aux35 #(actionFrom_00003 + -2)
+BOOL aux36 #(actionFrom_00001<4)
+BOOL aux37 #(actionFrom_00002<3)
+BOOL aux38 #(actionFrom_00001<5)
+BOOL aux39 #(actionFrom_00001<3)
+BOOL aux40 #(actionFrom_00002<4)
+BOOL aux41 #(actionFrom_00003<3)
+**VARIABLES**
+ALIAS cards[5]=[46, 7, 17, 23, 4]
+**SEARCH**
+PRINT[[states_00002_00001],[states_00002_00002],[states_00002_00003],[states_00002_00004],[states_00003_00001],[states_00003_00002],[states_00003_00003],[states_00004_00001],[states_00004_00002],[actionFrom_00001],[actionFrom_00002],[actionFrom_00003],[actionTo_00001],[actionTo_00002],[actionTo_00003],[actionValue_00001],[actionValue_00002],[actionValue_00003]]
+VARORDER STATIC [states_00002_00001, states_00002_00002, states_00002_00003, states_00002_00004, states_00003_00001, states_00003_00002, states_00003_00003, states_00004_00001, states_00004_00002, actionFrom_00001, actionFrom_00002, actionFrom_00003, actionTo_00001, actionTo_00002, actionTo_00003, actionValue_00001, actionValue_00002, actionValue_00003]
+**CONSTRAINTS**
+reify(ineq(actionFrom_00001, 4, -1), aux36)
+reify(ineq(actionFrom_00002, 3, -1), aux37)
+reify(ineq(actionFrom_00001, 5, -1), aux38)
+reify(ineq(actionFrom_00001, 3, -1), aux39)
+reify(ineq(actionFrom_00002, 4, -1), aux40)
+reify(ineq(actionFrom_00003, 3, -1), aux41)
+div(actionValue_00001, 13, aux25)
+modulo(aux16,13,aux26)
+div(actionValue_00002, 13, aux27)
+modulo(actionValue_00002,13,aux28)
+div(actionValue_00003, 13, aux29)
+modulo(aux18,13,aux30)
+div(states_00004_00002, 13, aux31)
+modulo(states_00004_00002,13,aux32)
+watchelement([7, 17, 23, 4], aux33, actionValue_00001)
+watchelement([states_00002_00002, states_00002_00003, states_00002_00004], aux34, actionValue_00002)
+watchelement([46, 7, 17], aux24, aux16)
+watchelement([states_00002_00001, states_00002_00002, states_00002_00003], aux23, aux17)
+watchelement([states_00003_00001, states_00003_00002], aux22, aux18)
+watchelement([states_00003_00002, states_00003_00003], aux35, actionValue_00003)
+watched-or({div(aux16, 13, aux25),modulo(actionValue_00001,13,aux26)})
+reifyimply(w-literal(states_00002_00003,23), aux36)
+watched-or({w-literal(states_00002_00002,7),ineq(actionFrom_00001, 2, 0),w-literal(actionTo_00001,2)})
+reifyimply(gaceq(states_00002_00003,states_00003_00002), aux37)
+watched-or({div(aux17, 13, aux27),modulo(aux17,13,aux28)})
+watched-or({w-literal(states_00002_00003,17),ineq(actionFrom_00001, 3, 0),w-literal(actionTo_00001,3)})
+watchelement([states_00004_00001, states_00004_00002], aux22, actionValue_00003)
+watched-or({gaceq(states_00004_00002,states_00003_00002),ineq(actionFrom_00003, 2, 0),w-literal(actionTo_00003,2)})
+watchelement([states_00002_00001, states_00002_00002, states_00002_00003], aux24, actionValue_00001)
+diseq(actionTo_00001,actionFrom_00001)
+watched-or({div(aux18, 13, aux29),modulo(actionValue_00003,13,aux30)})
+watched-or({gaceq(states_00002_00003,states_00003_00003),ineq(actionFrom_00002, 3, 0),w-literal(actionTo_00002,3)})
+reifyimply(w-literal(states_00002_00004,4), aux38)
+reifyimply(w-literal(states_00002_00002,17), aux39)
+watched-or({w-literal(aux20,1),w-literal(aux20,3)})
+watched-or({w-literal(aux21,1),w-literal(aux21,3)})
+watched-or({w-literal(states_00002_00004,23),ineq(actionFrom_00001, 4, 0)})
+diseq(actionTo_00002,actionFrom_00002)
+watched-or({gaceq(states_00002_00002,states_00003_00002),ineq(actionFrom_00002, 2, 0),w-literal(actionTo_00002,2)})
+watched-or({div(states_00004_00001, 13, aux31),modulo(states_00004_00001,13,aux32)})
+watched-or({w-literal(states_00002_00001,46),w-literal(actionTo_00001,1)})
+watchelement([states_00003_00001, states_00003_00002, states_00003_00003], aux23, actionValue_00002)
+watched-or({gaceq(states_00002_00001,states_00003_00001),w-literal(actionTo_00002,1)})
+reifyimply(gaceq(states_00002_00004,states_00003_00003), aux40)
+watched-or({gaceq(states_00004_00001,states_00003_00001),w-literal(actionTo_00003,1)})
+reifyimply(gaceq(states_00004_00002,states_00003_00003), aux41)
+diseq(actionTo_00003,actionFrom_00003)
+sumleq([actionFrom_00001,-2],aux33)
+sumgeq([actionFrom_00001,-2],aux33)
+sumleq([actionFrom_00002,-2],aux34)
+sumgeq([actionFrom_00002,-2],aux34)
+sumleq([actionFrom_00003,-2],aux35)
+sumgeq([actionFrom_00003,-2],aux35)
+weightedsumleq([-1,1],[actionTo_00001,actionFrom_00001],aux20)
+weightedsumgeq([-1,1],[actionTo_00001,actionFrom_00001],aux20)
+weightedsumleq([-1,1],[actionTo_00002,actionFrom_00002],aux21)
+weightedsumgeq([-1,1],[actionTo_00002,actionFrom_00002],aux21)
+sumleq([actionTo_00003,-1],aux22)
+sumgeq([actionTo_00003,-1],aux22)
+sumleq([actionTo_00002,-1],aux23)
+sumgeq([actionTo_00002,-1],aux23)
+sumleq([actionTo_00001,-1],aux24)
+sumgeq([actionTo_00001,-1],aux24)
+weightedsumleq([-1,1],[actionTo_00003,actionFrom_00003],1)
+weightedsumgeq([-1,1],[actionTo_00003,actionFrom_00003],1)
+**EOF**

@@ -1,0 +1,75 @@
+$ Late binding solitaire problem
+language ESSENCE' 1.0
+
+
+$ given n
+
+given cards : matrix indexed by [ int(1..n) ] of int(0..51)
+where alldifferent(cards)
+
+$constants
+letting STEPS be domain int(1..n-1)
+letting CARDS be domain int(0..51)
+letting STEPSNO = n-1
+
+$ the moving action
+$ action at step i transforms state i-1 to state i 
+$ triple is (fromCard, toCard, cardValue)
+find states : matrix indexed by [int(1..n), int(1..n)] of int(-1..51)
+
+find actionFrom : matrix indexed by [ STEPS ] of int(1..n)
+find actionTo : matrix indexed by [ STEPS ] of int(1..n)
+find actionValue : matrix indexed by [ STEPS ] of CARDS
+
+such that
+
+$ starting state
+forAll i : int(1..n) .
+    states[1, i] = cards[i],
+
+$ can't move card to itself
+forAll step : STEPS .
+    actionFrom[step] != actionTo[step],
+
+$ goal state(s) 
+$ set last column after every step to -1 in states
+forAll i: int(1..n) .
+    forAll j: int(0..STEPSNO) .
+        i - 1 > j 
+        ->
+        states[i, (n-j)] = -1,
+
+$ $ all columns who are less than source and are not the dest remain the same
+forAll step : STEPS .
+    forAll col : int(1..n) .
+        col < actionFrom[step] /\ col != actionTo[step] 
+        -> states[step+1, col] = states[step, col],
+
+$ all columns greater than the source are shifted one to the left
+forAll step : STEPS .
+    forAll col : int(1..n) .
+        col > actionFrom[step]
+        -> states[step+1, col-1] = states[step, col],
+
+$ can't move a -1 
+forAll step : STEPS . 
+    states[step, actionFrom[step]] >= 0,
+
+$ set 'to' indices to the new value
+forAll step : STEPS .
+    states[step + 1, actionTo[step]] = states[step, actionFrom[step]] /\
+        actionValue[step] = states[step, actionFrom[step]],
+    
+$ all steps must be a jump of 1 or 3 to the left
+forAll step : STEPS .
+    actionFrom[step] - actionTo[step] = 1 \/ actionFrom[step] - actionTo[step] = 3,
+
+$ all steps must be legal (same number or same suit)
+forAll step : STEPS .
+    states[step, actionFrom[step]] % 13 =  states[step, actionTo[step]] % 13 \/
+        states[step, actionFrom[step]] / 13 = states[step, actionTo[step]] / 13,
+
+
+
+
+true

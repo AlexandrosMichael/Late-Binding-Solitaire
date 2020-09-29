@@ -1,0 +1,17 @@
+language ESSENCE' 1.0
+$ Minion SolverNodes: 210
+$ Minion SolverTotalTime: 0.065897
+$ Minion SolverTimeOut: 0
+$ Savile Row TotalTime: 0.412
+letting actionFrom be [3, 5, 5, 4, 4, 2, 3, 2]
+letting actionTo be [2, 4, 2, 3, 1, 1, 2, 1]
+letting actionValue be [8, 19, 2, 19, 12, 2, 6, 6]
+letting states be [[38, 21, 8, 18, 20, 19, 2, 12, 6], 
+[38, 8, 18, 20, 19, 2, 12, 6, -1], 
+[38, 8, 18, 19, 2, 12, 6, -1, -1], 
+[38, 2, 18, 19, 12, 6, -1, -1, -1], 
+[38, 2, 19, 12, 6, -1, -1, -1, -1], 
+[12, 2, 19, 6, -1, -1, -1, -1, -1], 
+[2, 19, 6, -1, -1, -1, -1, -1, -1], 
+[2, 6, -1, -1, -1, -1, -1, -1, -1], 
+[6, -1, -1, -1, -1, -1, -1, -1, -1]]

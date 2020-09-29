@@ -1,0 +1,12 @@
+language ESSENCE' 1.0
+$ Minion SolverNodes: 3
+$ Minion SolverTotalTime: 0.038043
+$ Minion SolverTimeOut: 0
+$ Savile Row TotalTime: 0.187
+letting actionFrom be [2, 2, 2]
+letting actionTo be [1, 1, 1]
+letting actionValue be [9, 1, 3]
+letting states be [[22, 9, 1, 3], 
+[9, 1, 3, -1], 
+[1, 3, -1, -1], 
+[3, -1, -1, -1]]
